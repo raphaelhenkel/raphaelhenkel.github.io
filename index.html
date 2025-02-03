@@ -4,57 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raphael Henkel.</title>
-    <style>
-        
-        body {
-            font-family: "Helvetica", sans-serif;
-            padding: 10;
-            margin: 20px;
-        }
-        h1 {
-            color: #000;
-            font-weight: bold;
-        }
-        h2 {
-            color: #000;
-
-        }
-        p {
-            color: #000;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 50%;
-        }
-        th, td {
-            
-            padding: 8px;
-            text-align: left;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Raphael Henkel.</h1>
-    <hr>
-    <h2>IT Consultant</h2>
-    <p>Automation, IT Strategy, Analytics, Enterprise Architecture, Software Engineering</p>
-    
-    <h2>Connect:</h2>
-    
-    <table>
-        <tr>
-            <td>Mail</td>
-            <td>mail[at]raphaelhenkel.de</td>
-        </tr>
-        <tr>
-            <td>X</td>
-            <td>@raphaelhenkel</td>
-        </tr>
-        <tr>
-            <td>LinkedIn</td>
-            <td><a href='https://www.linkedin.com/in/raphael-henkel-b0705b101/'>Raphael Henkel</a></td>
-        </tr>
-    </table>
+    <div class="container">
+        <div class="header-card">
+            <div class="name">Raphael Henkel.</div>
+            <div class="title">IT Consultant</div>
+            <div class="description">Automation, IT Strategy, Analytics, Enterprise Architecture, Software Engineering</div>
+        </div>
+        
+        <div class="connect-card">
+            <div class="section-title">Connect</div>
+            <div class="links-container">
+                <a href="mailto:mail@raphaelhenkel.de" class="link-item">
+                    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+                </a>
+                <a href="https://twitter.com/raphaelhenkel" class="link-item">
+                    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X">
+                </a>
+                <a href="https://www.linkedin.com/in/raphael-henkel-b0705b101/" class="link-item">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

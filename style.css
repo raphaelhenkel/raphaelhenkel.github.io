@@ -1,0 +1,72 @@
+:root {
+    --primary-color: rgb(77, 107, 221);
+    --text-color: rgb(21, 40, 75);
+    --background: rgb(255, 245, 236);
+    --shadow: rgba(0, 0, 0, 0.08);
+    --border-radius: 8px;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background: var(--background);
+    margin: 0;
+    padding: 24px;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-card, .connect-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 24px 0px;
+    transition: transform 0.15s ease;
+}
+
+.header-card:hover, .connect-card:hover {
+    transform: translateY(-4px);
+}
+
+.name {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.description {
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+}
+
+.links-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.link-item {
+    transition: transform 0.15s ease;
+}
+
+.link-item:hover {
+    transform: translateY(-4px);
+}

@@ -99,3 +99,12 @@ a {
     text-decoration: none;
     color: inherit;
 }
+.links-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: row; /* Hinzugefügt */
+}
+.links-container a {
+    flex: 1;
+    text-align: center;
+}

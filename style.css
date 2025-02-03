@@ -68,6 +68,11 @@ body {
     padding: 12px 24px;
     margin-bottom: 12px;
     box-shadow: rgba(209, 72, 54, 0.9) 0px 4px 24px 0px;
+    transition: transform 0.3s ease;
+}
+
+.email-box:hover {
+    transform: scale(1.05);
 }
 
 .twitter-box {
@@ -77,6 +82,11 @@ body {
     padding: 12px 24px;
     margin-bottom: 12px;
     box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 24px 0px;
+    transition: transform 0.3s ease;
+}
+
+.twitter-box:hover {
+    transform: scale(1.05);
 }
 
 .linkedin-box {
@@ -86,6 +96,11 @@ body {
     padding: 12px 24px;
     margin-bottom: 12px;
     box-shadow: rgba(0, 119, 181, 0.9) 0px 4px 24px 0px;
+    transition: transform 0.3s ease;
+}
+
+.linkedin-box:hover {
+    transform: scale(1.05);
 }
 
 .links-container {

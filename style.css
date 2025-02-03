@@ -1,8 +1,10 @@
 :root {
-    --primary-color: rgb(77, 107, 221);
-    --text-color: rgb(21, 40, 75);
-    --background: rgb(255, 245, 236);
-    --shadow: rgba(0, 0, 0, 0.08);
+    --background: rgb(255, 255, 255);
+    --white: #ffffff;
+    --red: #D14836;
+    --black: #000000;
+    --linkedin: #0077B5;
+    --forest: #2E8B57;
     --border-radius: 8px;
 }
 
@@ -11,7 +13,6 @@ body {
     background: var(--background);
     margin: 0;
     padding: 24px;
-    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -20,53 +21,81 @@ body {
     margin: 0 auto;
 }
 
-.header-card, .connect-card {
-    background: white;
+.connect-card {
+    background: var(--white);
     border-radius: var(--border-radius);
     padding: 24px;
     margin-bottom: 24px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 24px 0px;
-    transition: transform 0.15s ease;
 }
 
-.header-card:hover, .connect-card:hover {
-    transform: translateY(-4px);
+.name-box {
+    background: var(--white);
+    color: #333;
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 4px 24px 0px;
 }
 
-.name {
-    font-size: 2.5em;
-    color: var(--primary-color);
-    font-weight: 600;
-    margin-bottom: 16px;
+.description-box {
+    background: var(--forest);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: rgba(46, 139, 87, 0.2) 0px 4px 24px 0px;
 }
 
-.title {
-    font-size: 1.5em;
-    color: var(--text-color);
-    margin-bottom: 8px;
+.email-box {
+    background: var(--red);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    margin-bottom: 12px;
+    box-shadow: rgba(209, 72, 54, 0.2) 0px 4px 24px 0px;
 }
 
-.description {
-    color: var(--text-color);
-    font-size: 1.1em;
+.twitter-box {
+    background: var(--black);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    margin-bottom: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 24px 0px;
 }
 
-.section-title {
-    font-size: 1.5em;
-    color: var(--primary-color);
-    margin-bottom: 16px;
+.linkedin-box {
+    background: var(--linkedin);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 12px 24px;
+    margin-bottom: 12px;
+    box-shadow: rgba(0, 119, 181, 0.2) 0px 4px 24px 0px;
 }
 
 .links-container {
     display: flex;
+    flex-direction: column;
     gap: 16px;
-    flex-wrap: wrap;
 }
 
-.link-item {
-    transition: transform 0.15s ease;
+.section-title {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 16px;
 }
 
-.link-item:hover {
-    transform: translateY(-4px);
+.name {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
